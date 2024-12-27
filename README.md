@@ -36,3 +36,4 @@ Create Dashboards:
 Use built-in templates or import JSON for Prometheus and Loki dashboards.
 
 
+![Alt Text](/Images/monitoring.png)

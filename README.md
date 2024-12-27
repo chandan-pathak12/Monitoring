@@ -12,6 +12,8 @@ mkdir project && cd project
 Create a docker-compose.yml file:
 Create a prometheus.yml file inside ~/project/prometheus:
 Create a local-config.yaml file inside ~/project/loki
+chmod -R 777 ~/project/grafana
+chmod -R 777 ~/project/loki
 Create an app directory and add a index.html file for the application
 
 Step3-

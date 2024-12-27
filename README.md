@@ -37,5 +37,11 @@ Create Dashboards:
 
 Use built-in templates or import JSON for Prometheus and Loki dashboards.
 
+######
+- We will get error for loki and promtail
+then 
+mkdir ~/root/promtailloki/loki   and loki-config.yml  on local machine
+mkdir ~/root/promtailloki/promtail   and promtail-config.yml  on local machine
+
 
 ![Alt Text](/Images/monitoring.png)

@@ -2,6 +2,8 @@ version: "3"
 
 networks:
   loki:
+    driver: bridge
+    name: loki_network
 
 services:
   app:
@@ -15,7 +17,7 @@ services:
       - loki
 
   loki:
-    image: grafana/loki:2.2.1
+    image: grafana/loki:latest
     container_name: loki
     ports:
       - "3100:3100"
@@ -38,7 +40,7 @@ services:
       - loki
 
   promtail:
-    image: grafana/promtail:2.2.1
+    image: grafana/promtail:latest
     container_name: promtail
     volumes:
       - /var/log:/var/log

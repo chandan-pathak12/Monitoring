@@ -18,4 +18,21 @@ Step3-
 docker-compose up -d
 docker ps
 
+Step 4: Configure Grafana for Monitoring
+Login to Grafana:
+
+Default username: admin
+Default password: admin
+Add Data Sources:
+
+Prometheus:
+Navigate to Configuration > Data Sources.
+Select Prometheus and add http://prometheus:9090 as the URL.
+Loki:
+Add another data source and select Loki.
+Set the URL to http://loki:3100.
+Create Dashboards:
+
+Use built-in templates or import JSON for Prometheus and Loki dashboards.
+
 
